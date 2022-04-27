@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--El atributo lang nos indica que el idioma de la pagina es español (es)-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso HTML y CSS</title>
+    </head>
+    <body>
+
+<!--
+¿Que significa HTML?
+Hiper
+Text
+Markup
+Language
+Lenguaje de marcado de hipertexto
+Es un lenguaje que nos opermite estructurar nuestra pagina web.
+La extencion correspondiente de este tipo de archivos es .html
+   
+EJEMPLO DE ETIQUETAS
+<head>
+    La mayoria de los elementos en html requieren de dos etiquetas
+    una de apertura y otra de cierre
+</head>
+Exixten etiquetas que no requieren tener un cierre, como por 
+ejemplo la etiqueta de imagen <img>
+
+ESTRUCTURA DE DEL DOCUMENTO 
+
+<!DOCTYPE html> Indica que es un documento de tipo HTML
+    <html>  Dentro de esta etiqueta es donde se desarrolla todo el documento
+            A su vez posee dos etiquetas principales
+        <head>
+            Incluye todos los elementos que no son visibles para los usuarios
+        </head>
+        <body>
+            Incluye todos los elementos con los que el usuario puede interactuar
+            Es donde definimos la estructurar de la pagina
+        </body>
+    </html> 
+--> 
+    <!--TITULOS Y ENCABEZADOS-->
+    <!--
+        Los elementos h sirven para crear titulos y encabezados
+        a medida que incrementa el numero de h disminuye el tamaño 
+        del contenido de la misma, siendo h1 la de mayor tamaño.
+        Estas medidas, posteriormente, pueden ser modificadas con css, 
+        Estas etiquetas pueden repetirse cuantas veces sean necesarias,
+        exceptuando a la de h1, esa solo se puede usar una vez.
+    -->
+    <h1>Titulo h1</h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</hh3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+
+    <!--PARRAFOS-->
+    <!--Para la creacion de parrafos utilizamos el elemento <p></p>-->
+    <h2>Primer parrafo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus illum eum, quasi expedita corrupti nam quaerat 
+        ducimus saepe aperiam, natus earum. Corporis, quam harum 
+        repudiandae quod minima animi earum eligendi?
+    </p>
+    <!--ETIQUETA MAIN-->
+    <!--La etiqueta main sirve para contener a los elementos
+    mas importantes de nuestra pagina web.EJEMPLO-->
+    <main>
+        <h2>Titulo importante</h2>
+        <p>
+            parrafo importante dentro de main
+        </p>
+        <!--IMAGENES-->
+        
+        <img src = "imagenes/img1.jpg" alt="Un Drone" />
+
+        <!--COMO CREAR ENLACES EXTERNOS-->
+        <!--
+            Los enlaces se generan mediante la etiqueta <a>nombre del enlace</a>
+            Junto con el atributo href= El cual nos indica a donde nos va a 
+            llevar ese enlace, EJEMPLO: <a href="http://google.com">Clock aqui</a>
+            Este enlace nos indica que haciendo Click aqui nos llevara a la pagina
+            de google
+        -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quo vitae ducimus explicabo voluptates, reiciendis similique 
+            quis consequuntur libero quaerat,<a href="https://www.google.com/">Hace Click Aqui</a> aliquam in doloremque ipsam 
+            cupiditate neque dolorem beatae? Eius, eum debitis?
+        </p>
+        <h2>Como hacer que el enlace se abra en una pestaña nueva</h2>
+        <p>Esto se hace mediante el atributo target = "_Blank" esto nos indica 
+           que el enlace sera abierto en una pestaña nueva, veamoslo con un 
+           ejemplo: <a href="https://www.google.com/" target = "_blank">Pestaña nueva</a>
+           Un detalle en cuanto a la seguridad es el atributo rel = "noopener noreferrer".
+           Con el cual nos permite prevenir un ataque llamado tabnabbing, en el cual la pestaña
+           es reemplazada para que el usuario ingrese sus datos para asi poder robarselos.
+           Ejemplo: <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Google</a>
+        </p>
+        <!--ENLACES A SECCIONES INTERNAS-->
+    </main>
+    </body>
+</html>
