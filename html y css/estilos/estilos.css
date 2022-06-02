@@ -15,3 +15,261 @@ p{
 Comentario en css
 */
 /*Familias de tipografias*/
+/*Como cambiar el tipo de fuente de los elementos h2*/
+h2{
+    font-family: "verdana";
+}
+/*font-family
+Resumen
+La propiedad font-family define una lista de fuentes o 
+familias de fuentes, con un orden de prioridad, para 
+utilizar en un elemento seleccionado. A diferencia 
+de la mayoría de las propiedades CSS, los valores 
+se separan con comas (",") para indicar que son valores 
+alternativos.*/
+/*Google Fonts*/
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*Cambiar el tamaño de las imagenes*/
+/*img{
+    width: 500px;
+}
+*/
+/*
+.img-responsive{
+    width: 200;
+}
+*/
+/*
+Como agregar bordes
+*/
+.imagenes-de-drones{
+    width: 300px;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+    /*
+    En este caso agregamos un borde con un grosor de
+    3px, un color negro y un estilo solid.
+    el estilo solid es basicamente una linea continua
+    alrededor del elemento.
+    */
+}
+/*
+Estolilos de bordes
+    border-style:none;
+    Indica que la imagen no tendra ningun borde.
+    border-style:dotted;
+    Indica que la imagen tendra un borde punteado.
+    border-style:double;
+    Indica que la imagen tendra un borde doble.
+    border-style:groove;
+    Indica que la imagen tendra una especie de surco a su alrrededor
+    border-style:ridge;
+    Genera una especie de sombreado interno en el borde.
+    border-style:inset;
+    Oscuerese una esquina del borde.
+
+    *Pueden usarse mas de un estilo en los bordes,
+    se escriben uno al lado del otro y se aplican en sentido
+    de las agujas del reloj. Por ejemplo.
+*/
+.imagenes-de-drone{
+    width: 400px;
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid dashed dotted double;
+    /*En este caso se aplican los cuatro estilos, 
+    uno en cada borde*/
+}
+/*
+Esquinas redondeadas
+*/
+.bordes-redondeados{
+    width: 300px;
+    border-radius: 20px;
+}
+/*Conforme vayamos aumentando los pixeles del border-radius
+podemos lograr que la imagen sea completamente redonda como 
+en el siguiente ejemplo: */
+.bordes-circular{
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 50%;
+    /*
+    Para que la imagen sea un circulo es necesario que 
+    sea cuadrada y que tenga un border-radius del 50%
+    */
+    /*Esto es muy util para crear imagenes circulares 
+    que sirvan para fotos de usuarios o perfiles, entre
+    muchas otras utilidades*/
+}
+
+/*Agregar color de fondo den un div*/
+.contenedor-imagenes{
+    background-color: #abc23b;
+}
+/*Asignando estilos mediante id*/
+#imagenes-id h2{
+    font-size:30px;
+    color: rgb(68, 190, 78)
+}
+#imagenes-id img{
+    width: 400px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(209, 112, 112)
+}
+#listas-id{
+    font-size: 15px;
+    color: rgb(50, 25, 192);
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Padding*/
+/*
+El padding es la distancia que hay entre un elemento
+html y su contenido
+Para que un lemento tenga un pading, simplemente creamos 
+la propiedad padding y le asignamos un valor, en el siguiente 
+ejemplo el padding es de 15 pixeles y se aplica de manera
+igual a cada uno de los lados.
+*/
+#padding-img{
+    background-color: #abc23b;
+}
+#padding-img img{
+    width: 400px;
+    padding: 15px;
+    background-color: yellow;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+}
+/*Tambien podemos asignarle un padding diferente a
+cada borde de la siguiente manera
+#padding-img img{
+    width: 400px;
+    padding-top: 5px;
+    padding-rigth: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    background-color: yellow;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+}
+Esto asigna una medida diferente de padding a cada borde
+*/
+/*Tambien podemos asignar los valores de cada lado del padding
+en una sola linea*/
+#padding-image {
+    background-color: #abc23b;
+}
+#padding-image img {
+    width: 400px;
+    padding: 20px 15px 60px 15px;
+    background-color: yellow;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+}
+/*Margenes*/
+#margen-img{
+    /*margin: 30px;*/
+    background-color: #abc23b;
+}
+#margen-img img {
+    width: 400px;
+    margin: 50px /*80px 70px 80px*/;
+    padding: 20px 15px 60px 15px;
+    background-color: yellow;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+}
+/*El margen es la distancia entre el borde de
+un elemento y los elementos que tenga a su 
+alrededor*/
+/*Diferencia entre el padding y el margin*/
+
+#id-de-prueba {
+    background-color: #abc23b;
+}
+#ejemplo-padding-margin{
+    width: 400px;
+    margin: 50px;
+    padding: 20px 20px 20px 20px;
+    background-color: blue;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+
+}
+
+#otro-ejemplo-padding-margin{
+    background-color: #abc23b;
+}
+#otro-ejemplo-padding-margin img{
+    width: 400px;
+    margin: 50px;
+    padding: 40px 20px 30px 20px;
+    background-color: blue;
+    border-width: 3px;
+    border-color: #000000;
+    border-style: solid;
+}
+/*Selectores de atributos*/
+
+img[width]{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+/*Unidades absolutas y relativas*/
+#contenedor-principal{
+    color: #000000;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(243, 239, 29);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rectangulo div{
+    padding: 5px;
+    margin: 5px;
+}
+.px{
+    background-color: crimson;
+    width: 200px;
+}
+.vw{
+    background-color: darkmagenta;
+    width: 20vw;
+}
+.em{
+    background-color: green;
+    width: 15em;
+}
+
+/*Elemento body
+body{
+    background-color: #000000;
+}*/
+
+/*Prioridades de estilos*/
+
+
+
+
+
+
+
+
+
+
