@@ -264,8 +264,22 @@ body{
 
 /*Prioridades de estilos*/
 
+/* Prioridad de ID sobre la clase */
 
+/*
+El id tiene prioridad sobre la clase 
+ya que es un selector mas especifico
+El estilo en linea se prioriza por encima 
+del id, y por ende tiene mas jerarquia
+que la clase.
+*/
+/*Codigos hexadecimales para los colores*/
 
+/*variables en css*/
+
+/*Variable root:
+Es una variable global
+*/
 
 
 
